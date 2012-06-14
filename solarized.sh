@@ -9,9 +9,12 @@
 set -o nounset
 
 # This next line would set the colors in the 256 color pallette which normally approximate
-# solarized.  Not a universal solution.
+# solarized.  Not a universal solution, but it helps with getting vim to look
+# right! Stick this in your .vimrc just before "colorscheme solarized":
+# let g:solarized_termtrans=1
+# let g:solarized_termcolors=256
 # See https://github.com/altercation/solarized/issues/8 for more information.
-#printf '\x1B]4;234;rgb:00/2b/36;235;rgb:07/36/42;240;rgb:58/6e/75;241;rgb:65/7b/83;244;rgb:83/94/96;245;rgb:93/a1/a1;254;rgb:ee/e8/d5;230;rgb:fd/f6/e3;136;rgb:b5/89/00;166;rgb:cb/4b/16;160;rgb:dc/32/2f;125;rgb:d3/36/82;61;rgb:6c/71/c4;33;rgb:26/8b/d2;37;rgb:2a/a1/98;64;rgb:85/99/00\a'
+printf '\x1B]4;234;rgb:00/2b/36;235;rgb:07/36/42;240;rgb:58/6e/75;241;rgb:65/7b/83;244;rgb:83/94/96;245;rgb:93/a1/a1;254;rgb:ee/e8/d5;230;rgb:fd/f6/e3;136;rgb:b5/89/00;166;rgb:cb/4b/16;160;rgb:dc/32/2f;125;rgb:d3/36/82;61;rgb:6c/71/c4;33;rgb:26/8b/d2;37;rgb:2a/a1/98;64;rgb:85/99/00\a'
 
 base03="00/2b/36"
 base02="07/36/42"
